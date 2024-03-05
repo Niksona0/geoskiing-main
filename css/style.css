@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Quicksand", sans-serif;
+    /* outline: 1px solid red; */
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #434445;
+}
+
+.hero-page, .services {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+}
+
+nav {
+    display: none;
+}
+
+.logo img {
+    width: 90px;
+    margin: 20px 0;
+}
+
+.hero-page {
+    background: url('/images/hero-img.jpg');
+    background-size: 2500px;
+    background-position: -1050px -750px;
+}
+
+.hero-page h1 {
+    font-size: 2.2rem;
+}
+
+.hero-page p {
+    margin: 15px 0;
+    max-width: 370px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.hero-page button {
+    display: block;
+    margin: 15px 0;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #377F8E;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #377F8E;
+    color: #fff;
+}
+
+.get-started {
+    background-color: rgba(255, 0, 0, 0) !important; 
+    color: #377F8E !important;
+}
+
+.services {
+    height: 1350px;
+    background-color: #E0E0E0;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.services .title {
+    font-size: 2.5rem;
+    font-weight:normal;
+}
+
+.services img {
+    width: 380px;
+    margin: 15px 0;
+}
+
+.services section {
+    border-top: 1px solid black;
+    margin: 25px 0;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.services section h2 {
+    font-size: 1.1rem;
+    color: #377F8E;
+    margin: 15px 0;
+}
+
+.info-photos {
+    width: 100%;
+    height: 4100px;
+    background-color: #E0E0E0;
+}
+
+.cont-title {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.info-photos .title {
+    font-size: 2.5rem;
+    width: 300px;
+    font-weight: normal;
+}
+
+.first-row, .sec-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-row img, .sec-row img {
+    width: 300px;
+    margin: 5px 0;
+}
+
+.first-row {
+    margin-top: 50px;
+}
+
+.our-team {
+    text-align: center;
+}
+
+.our-team .title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 25px 0 10px 0;
+}
+
+.blue-line {
+    width: 30px;
+    height: 2px;
+    background-color: #377F8E;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.prof-text h2 {
+    color:#377F8E;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.team-images {
+    margin: 25px 0;
+}
+
+.img-cont {
+    margin: 30px 0;
+}
+
+.team-job {
+    color: #377F8E;
+    text-decoration: underline;
+}
+
+.price-list {
+    background-color: #E0E0E0;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.private-lessons, .group-lessons {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.price-list .title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 25px 0 10px 0;
+}
+
+.bookLesson {
+    border-top: 1px solid #fff;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px
+}
+
+.bookLesson-headline .title {
+    font-size: 2rem;
+}
+
+.bookLesson-headline p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.bookLesson-contacts {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bookLesson-contacts h2 {
+    color: #377F8E;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.bookLesson-contacts p, a {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-form {
+    width: 100%;
+    border: 1px solid white;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-form input[type='text'] {
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #377F8E;
+    background-color: #e0e0e000;
+}
+
+input[type='text']::placeholder {
+    color: #377F8E;
+    font-size: 1rem;
+    padding-left: 15px;
+}
+
+input[type='submit'] {
+    width: 160px;
+    height: 60px;
+    color: #fff;
+    background-color: #377F8E;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+footer {
+    width: 100%;
+    height: 550px;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.footer_logo {
+    width: 100px;
+}
+
+.icon {
+    width: 20px;
+    margin: 0 10px;
+}
