@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: 0;
     font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth;
     /* outline: 1px solid red; */
 }
 
@@ -79,9 +80,9 @@ nav {
     color: #fff;
 }
 
-.get-started {
-    background-color: rgba(255, 0, 0, 0) !important; 
-    color: #377F8E !important;
+#get-started {
+    background-color: rgba(255, 0, 0, 0); 
+    color: #377F8E;
 }
 
 .services {
@@ -218,7 +219,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 20px
+    padding: 20px;
 }
 
 .bookLesson-headline .title {
@@ -291,17 +292,129 @@ footer {
     width: 100%;
     height: 550px;
     background-color: #E0E0E0;
+    color: #377F8E;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     justify-content: space-around;
-    
+}
+footer .icon{
+    margin: 0;
+}
+footer section{
+    font-size: 18px;
+    margin-left: 15px;
+}
+footer .socialNetwork{
+    width: 170px;
+
+}
+footer .con_icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .con_icons .icon{
+    margin: 0;
+    width: 18px;
 }
 
-.footer_logo {
-    width: 100px;
+footer .contactInfo a{
+    color: #377F8E;
+    display: flex;
+    justify-content: row;
+    margin-top: 10px;
+}
+footer .contactInfo a .icon{
+    margin-right: 5px;
+}
+footer .footer_logo{
+    align-self: center;
+    width: 90px;
+    
 }
 
 .icon {
     width: 20px;
     margin: 0 10px;
+}
+
+footer .openingHours p{
+    margin-top: 10px;
+}
+
+@media(min-width:819px) { /* TABLET */
+    .services{
+        display: flex;
+        justify-content: row;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        color: #377F8E;
+        margin: 0 15px;
+        font-size: 1.3rem;
+        transition: .5s;
+    }
+
+    nav ul li a:hover {
+        color: #7ab0bb;
+    }
+
+    .hero-page {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: -750px;
+    }
+
+    .hero-page .title br {
+        display: none;
+    }
+
+    .hero-page .title {
+        font-size: 2.5rem;
+    }
+
+    .hero-text {
+        max-width: 700px !important;
+        margin: 30px 0 !important;
+    }
+
+    .hero-page button {
+        display: inline-block;
+        margin: 0 10px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .learn-more:hover {
+        background: #e0e0e000;
+        color: #377F8E;
+    }
+
+    #get-started:hover {
+        background: #377F8E;
+        color: #fff;
+    }
+
+}
+
+@media(min-width:1015px) { /* DESKTOP */
+
+    
 }
