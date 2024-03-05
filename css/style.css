@@ -379,7 +379,7 @@ footer .openingHours p{
     .hero-page {
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: -750px;
+        background-position-y: -750px center;
     }
 
     .hero-page .title br {
