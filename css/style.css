@@ -309,6 +309,15 @@ footer .socialNetwork{
     width: 170px;
 
 }
+.footer_logo_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center_div{
+    text-wrap: nowrap;
+    margin-left: 15px;
+}
 footer .con_icons{
     margin-top: 10px;
     display: flex;
@@ -379,7 +388,7 @@ footer .openingHours p{
     .hero-page {
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: -750px center;
+        background-position-y: -750px;
     }
 
     .hero-page .title br {
