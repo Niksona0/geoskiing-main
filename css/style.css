@@ -6,7 +6,8 @@
     box-sizing: 0;
     font-family: "Quicksand", sans-serif;
     scroll-behavior: smooth;
-    /*outline: 1px solid red;*/
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 ul li {
@@ -54,6 +55,7 @@ nav {
     background: url('/images/hero-img.jpg');
     background-size: 2500px;
     background-position: -1050px -750px;
+    max-height: 700px;
 }
 
 .hero-page h1 {
@@ -90,6 +92,7 @@ nav {
     background-color: #E0E0E0;
     overflow: hidden;
     padding: 30px 0;
+    
 }
 
 .services .title {
@@ -98,7 +101,8 @@ nav {
 }
 
 .services img {
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     margin: 15px 0;
 }
 
@@ -107,6 +111,7 @@ nav {
     margin: 25px 0;
     padding: 10px 0;
     text-align: left;
+    width: 100%;
 }
 
 .services section h2 {
@@ -122,7 +127,11 @@ nav {
     /* padding: 0 20px; */
     background-color: #E0E0E0;
 }
-
+/* .cont-services section, .cont-services section img{
+    @media (max-width:450px) {
+        width: 90%;
+    }
+} */
 .cont-title {
     width: 100%;
     background-color: #fff;
@@ -134,7 +143,7 @@ nav {
 
 .info-photos .title {
     font-size: 2.5rem;
-    width: 300px;
+    min-width: 300px;
     font-weight: normal;
 }
 
@@ -193,6 +202,7 @@ nav {
 
 .price-list {
     width: 100%;
+    max-width: 2500px;
     background-color: #E0E0E0;
     height: fit-content;
     text-align: center;
@@ -228,7 +238,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 20%;
 }
 
 .bookLesson-headline .title {
@@ -355,6 +365,11 @@ footer .footer_logo{
 footer .openingHours p{
     margin-top: 10px;
 }
+.cont-services, .sec-row img, .first-row img{
+    @media (max-width:450px) {
+        width: 90%;
+    }
+}
 @media (min-width:720px) {
     /* .photos-cont{
         flex-direction: column;
@@ -442,6 +457,7 @@ footer .openingHours p{
     }
     .first-row,.sec-row{
         width: 100%;
+        max-width: 2500px;
         flex-wrap: nowrap;
     }
 
@@ -451,12 +467,14 @@ footer .openingHours p{
     }
 
     .info-photos {
-        height: 720px;
+        height: fit-content;
+        max-width: 2500px;
     }
 
     .team-images {
         overflow: hidden;
-        max-width: 100%;
+        width: 100%;
+        max-width: 2500px;
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
@@ -479,6 +497,7 @@ footer .openingHours p{
         justify-content: start;
         align-items: center;
         width: 100%;
+        max-width: 2500px;
     }
 
     .cont-services {
@@ -487,7 +506,9 @@ footer .openingHours p{
         /* justify-content: center;
         align-items: center;
         flex-wrap: wrap; */
-        width: 65%;
+        width: 90%;
+        
+        
         /* height: fit-content; */
         /* transform: translateX(-70px); */
     }
@@ -499,17 +520,24 @@ footer .openingHours p{
         border-top: 1px solid black;
         text-align: center;
         /* padding: 30px; */
+        padding: 0 10px;
+        
     }
 
     .cont-services section:nth-child(2) {
         border-left: 1px solid black;
         border-right: 1px solid black;
+        
     }
-
+    .services{
+        align-items: start;
+        max-width: 2500px;
+        padding:15px 5% 0 5%;
+    }
     .cont-services img {
         width: 100%;
     }
-    .photo-cont
+    
 
     .price-list {
         height: 650px;
@@ -518,7 +546,6 @@ footer .openingHours p{
     .pricing-cont {
         flex-direction: row;
     }
-
     
     .pricing-cont img {
         flex-direction: row;
