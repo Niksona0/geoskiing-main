@@ -189,8 +189,15 @@ nav {
 }
 
 .price-list {
+    width: 100%;
     background-color: #E0E0E0;
     height: 1000px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.pricing-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,7 +281,6 @@ nav {
 input[type='text']::placeholder {
     color: #377F8E;
     font-size: 1rem;
-    padding-left: 15px;
 }
 
 input[type='submit'] {
@@ -286,6 +292,11 @@ input[type='submit'] {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+input:focus {
+    border: none;
+    outline: none;
 }
 
 footer {
@@ -344,11 +355,6 @@ footer .openingHours p{
 }
 
 @media(min-width:819px) { /* TABLET */
-    .services{
-        display: flex;
-        justify-content: row;
-    }
-
     header {
         display: flex;
         align-items: center;
@@ -379,7 +385,7 @@ footer .openingHours p{
     .hero-page {
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: -750px center;
+        background-position-y: -750px;
     }
 
     .hero-page .title br {
@@ -412,9 +418,110 @@ footer .openingHours p{
         color: #fff;
     }
 
+    .first-row, .sec-row {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .first-row img, .sec-row img {
+        width: 150px;
+        margin: 5px;
+    }
+
+    .info-photos {
+        height: 720px;
+    }
+
+    .team-images {
+        overflow: hidden;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-images img {
+        margin: 0 50px;
+    }
+
+    footer {
+        align-items: center;
+    }
 }
 
-@media(min-width:1015px) { /* DESKTOP */
+@media(min-width:1030px) { /* DESKTOP */
+    .services {
+        height: 550px;
+        justify-content: start;
+    }
+
+    .cont-services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 65%;
+    }
+
+    .cont-services section {
+        border: none;
+        width: 600px;
+        margin: 50px 0;
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .cont-services section:nth-child(2) {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .cont-services img {
+        width: 400px;
+    }
+
+    .price-list {
+        height: 650px;
+    }
+
+    .pricing-cont {
+        flex-direction: row;
+    }
 
     
+    .pricing-cont img {
+        flex-direction: row;
+        width: 350px;
+    }
+
+    .price-list .title {
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+
+    footer {
+        flex-direction: row;
+        height: 250px;
+    }
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #377F8E;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7ab0bb;
+  }
