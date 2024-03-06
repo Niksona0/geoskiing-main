@@ -6,7 +6,7 @@
     box-sizing: 0;
     font-family: "Quicksand", sans-serif;
     scroll-behavior: smooth;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 ul li {
