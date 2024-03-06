@@ -6,7 +6,7 @@
     box-sizing: 0;
     font-family: "Quicksand", sans-serif;
     scroll-behavior: smooth;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 ul li {
@@ -117,7 +117,9 @@ nav {
 
 .info-photos {
     width: 100%;
-    height: 4100px;
+    height: fit-content;
+    align-items: center;
+    /* padding: 0 20px; */
     background-color: #E0E0E0;
 }
 
@@ -138,6 +140,7 @@ nav {
 
 .first-row, .sec-row {
     display: flex;
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -191,7 +194,7 @@ nav {
 .price-list {
     width: 100%;
     background-color: #E0E0E0;
-    height: 1000px;
+    height: fit-content;
     text-align: center;
 
 }
@@ -352,6 +355,27 @@ footer .footer_logo{
 footer .openingHours p{
     margin-top: 10px;
 }
+@media (min-width:720px) {
+    /* .photos-cont{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    } */
+    .info-photos{
+        height: fit-content;
+    }
+    .first-row,.sec-row{
+        gap: 1%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .first-row img,.sec-row img{
+        width: 40%;
+    }
+}
 
 @media(min-width:819px) { /* TABLET */
     header {
@@ -416,15 +440,14 @@ footer .openingHours p{
         background: #377F8E;
         color: #fff;
     }
-
-    .first-row, .sec-row {
-        flex-direction: row;
-        justify-content: center;
+    .first-row,.sec-row{
+        width: 100%;
+        flex-wrap: nowrap;
     }
 
     .first-row img, .sec-row img {
-        width: 150px;
-        margin: 5px;
+        width: calc(90%/6);
+        /* margin: 5px; */
     }
 
     .info-photos {
@@ -436,11 +459,13 @@ footer .openingHours p{
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
+        gap: 50px;
         justify-content: center;
     }
 
     .team-images img {
         margin: 0 50px;
+
     }
 
     footer {
@@ -450,21 +475,26 @@ footer .openingHours p{
 
 @media(min-width:1030px) { /* DESKTOP */
     .services {
-        height: 550px;
+        height: fit-content;
         justify-content: start;
+        align-items: center;
+        width: 100%;
     }
 
     .cont-services {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; */
         width: 65%;
+        /* height: fit-content; */
         /* transform: translateX(-70px); */
     }
 
     .cont-services section {
         border: none;
-        width: 600px;
+        width: 33%;
         margin: 50px 0;
         border-top: 1px solid black;
         text-align: center;
@@ -477,8 +507,9 @@ footer .openingHours p{
     }
 
     .cont-services img {
-        width: 400px;
+        width: 100%;
     }
+    .photo-cont
 
     .price-list {
         height: 650px;
@@ -498,7 +529,26 @@ footer .openingHours p{
         margin-bottom: 30px;
         font-size: 3rem;
     }
-
+    .bookLesson{
+        display: grid;
+        gap: 3%;
+        height: 600px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+    .bookLesson .bookLesson-headline{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .bookLesson .bookLesson-contacts{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .bookLesson .contact-form{
+        height: 90%;
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
     footer {
         flex-direction: row;
         height: 250px;
