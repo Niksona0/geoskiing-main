@@ -124,14 +124,9 @@ nav {
     width: 100%;
     height: fit-content;
     align-items: center;
-    /* padding: 0 20px; */
     background-color: #E0E0E0;
 }
-/* .cont-services section, .cont-services section img{
-    @media (max-width:450px) {
-        width: 90%;
-    }
-} */
+
 .cont-title {
     width: 100%;
     background-color: #fff;
@@ -397,6 +392,32 @@ footer .openingHours p{
     margin-top: 10px;
 }
 
+.up-arrow {
+    display: none;
+}
+
+.cont-services, .sec-row img, .first-row img{
+    @media (max-width:450px) {
+        width: 90%;
+    }
+}
+
+@media (min-width:720px) {
+    .info-photos{
+        height: fit-content;
+    }
+    .first-row,.sec-row{
+        gap: 1%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .first-row img,.sec-row img{
+        width: 40%;
+    }
+}
+
 @media(min-width:819px) { /* TABLET */
     header {
         display: flex;
@@ -488,7 +509,6 @@ footer .openingHours p{
 
     .team-images img {
         margin: 0 50px;
-
     }
 
     .bookLesson-contacts a, .bookLesson-contacts p {
@@ -501,6 +521,42 @@ footer .openingHours p{
 
     footer {
         align-items: center;
+    }
+
+    .up-arrow {
+        display: inline-block;
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        background-color: #377F8E;
+        border-radius: 50%;
+        bottom: 15px;
+        right: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        transition: .5s;
+    }
+
+    .arrow-txt {
+        position: relative;
+        animation: bounce 2s infinite;
+    }
+
+    .up-arrow:hover {
+        background-color: #7ab0bb;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            top: 0;
+        }
+        40% {
+            top: 20px;
+        }
+        60% {
+            top: 15px;
+        }
     }
 }
 
@@ -542,7 +598,11 @@ footer .openingHours p{
         border-right: 1px solid black;
         
     }
-
+    .services{
+        align-items: center;
+        max-width: 2500px;
+        padding:15px 5% 0 5%;
+    }
     .cont-services img {
         width: 100%;
     }
