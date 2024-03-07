@@ -41,12 +41,12 @@
                 <img src="images/1.webp">
             </section>
             <section>
-                <h2>Private Ski/Snowboard Lessons</h2>
+                <h2>Group Ski/Snowboard Lesson</h2>
                 <p>All services are available for you at the moment!</p>
                 <img src="images/2.webp">
             </section>
             <section>
-                <h2>Private Ski/Snowboard Lessons</h2>
+                <h2>Ski/Snowboard Rentals</h2>
                 <p>All services are available for you at the moment!</p>
                 <img src="images/3.webp">
             </section>
@@ -146,7 +146,7 @@
                 <img src="images/1.webp">
 
                 <h2>Private Ski/Snowboard Lesson - კერძო სათხილამურო გაკვეთილი</h2>
-                <p>Private ski/snowboard lessons offer an unparalleled experience with personalized instruction, custom tailored to your individual skill level.</p>
+                <p class="lessons-txt">Private ski/snowboard lessons offer an unparalleled experience with personalized instruction, custom tailored to your individual skill level.</p>
 
                 <h3 class="price">140 <span class="currency">GEL</span></h3>
             </div>
@@ -155,7 +155,7 @@
                 <img src="images/1.webp">
 
                 <h2>Group Ski/Snowboard Lesson - ჯგუფური სათხილმაურო გაკვეთილი</h2>
-                <p>Our ski and snowboard lessons cater to all skill levels and ages, allowing you to progress and build confidence in a fun, social environment.</p>
+                <p class="lessons-txt">Our ski and snowboard lessons cater to all skill levels and ages, allowing you to progress and build confidence in a fun, social environment.</p>
 
                 <h3 class="price">90 <span class="currency">GEL</span></h3>
             </div>
@@ -169,28 +169,30 @@
         </section>
 
         <section class="bookLesson-contacts">
-            <div class="contacts-mail">
+            <div class="contacts mail">
                 <h2>Email</h2>
                 <a href="mailto: geoskig@gmail.com">geoskig@gmail.com</a>
             </div>
-            <div class="contacts-phone">
+            <div class="contacts phone">
                 <h2>Phone</h2>
                 <a href="whatsapp:/send?phone=599875909&text=Hello%20there!">+995 511 414 751</a>
             </div>
-            <div class="contacts-address">
+            <div class="contacts address">
                 <h2>Address</h2>
-                <p>Gudauri, Georgia</p>
+                <a href="https://www.google.com/maps/place/Gudauri/data=!4m2!3m1!1s0x404528fdf2ee8197:0xf2c31d07053611a4?sa=X&ved=2ahUKEwinhZH4hOKEAxXPRvEDHexHAuMQ8gF6BAgSEAA" target="_blank">Gudauri, Georgia</a>
             </div>
         </section>
 
         <section class="contact-form">
-            <input class="firstName" type="text" placeholder="First Name">
-            <input class="lastName" type="text" placeholder="Last Name">
-            <input class="emailAddress" type="text" placeholder="Email Address*">
-            <input class="phone" type="text" placeholder="Phone">
-            <input class="notes" type="text" placeholder="Notes*">
+            <form>
+                <input class="firstName" type="text" placeholder="First Name" required>
+                <input class="lastName" type="text" placeholder="Last Name">
+                <input class="emailAddress" type="text" placeholder="Email Address*" required>
+                <input class="phone" type="text" placeholder="Phone">
+                <input class="notes" type="text" placeholder="Notes*" required >
 
-            <input type="submit">
+                <button type="submit">Submit</button>
+            </form>
         </section>
 
     </main>
@@ -203,10 +205,10 @@
             <div class="center_div">
                 <h3>Social Networks</h3>
                 <div class="con_icons">
-                    <img class="icon" src="images/facebook-app-symbol.png" alt="">
-                    <img class="icon" src="images/instagram.png" alt="">
-                    <img class="icon" src="images/whatsapp.png" alt="">
-                    <img class="icon" src="images/telegram.png" alt="">
+                    <a href="https://www.facebook.com/profile.php?id=100041425513225"><img class="icon" src="images/facebook-app-symbol.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/gvritishvilishota/"><img class="icon" src="images/instagram.png" alt="instagram icon"></a>
+                    <a href="https://wa.me/511414751"><img class="icon" src="images/whatsapp.png" alt="whatsapp icon"></a>
+                    <a href="https://t.me/geoskiigudauri"><img class="icon" src="images/telegram.png" alt="telegram icon"></a>
                 </div>
             </div>
         </section>
@@ -214,12 +216,12 @@
         <section class="contactInfo">
             <div class="center_div">
                     <h3>Contact Info</h3>
-                <a class="cont_mail" href="#">
-                    <img src="images/email.png" alt="" class="icon">
+                <a class="cont_mail" href="mailto: geoskig@gmail.com">
+                    <img src="images/email.png" alt="email icon" class="icon">
                     <p>geoskig@gmail.com</p>
                 </a>
-                <a class="cont_phone" href="#">
-                    <img src="images/phone-call.png" alt="" class="icon">
+                <a class="cont_phone" href="whatsapp:/send?phone=599875909&text=Hello%20there!">
+                    <img src="images/phone-call.png" alt="phone icon" class="icon">
                     <p>511414751</p>
                 </a>
             </div>
