@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shota Gvritishvili, Nika Arudashvili">
+    <meta name="keywords" content="ski instructor, snowboard instructor, skiing lessons, snowboarding lessons, skiing techniques, snowboarding techniques, skiing tips, snowboarding tips, skiing instructor gudauri, snowboarding instructor gudauri, skiing classes, snowboarding classes, skiing tutorials, snowboarding tutorials, skiing for beginners, snowboarding for beginners, skiing for kids, snowboarding for kids, skiing drills, snowboarding drills, georgia, gudauri, tbilisi, low prices">
+    <meta name="description" content="Welcome to our skiing and snowboarding school in Gudauri, Georgia! Our experienced instructors offer skiing lessons, snowboarding lessons, techniques, and tips for all levels, from beginners to advanced. Explore our skiing classes and snowboarding tutorials tailored for kids and adults. Discover Gudauri, a paradise for winter sports enthusiasts, conveniently located near Tbilisi. Enjoy low prices and unforgettable skiing drills in the breathtaking landscapes of Georgia's premier ski resort, Gudauri." />
     <link rel="icon" type="image/x-icon" href="/images/geoskiing-logo.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Geo Skiing</title>
@@ -185,12 +188,14 @@
 
         <section class="contact-form">
             <form action="https://formsubmit.co/geoskig@gmail.com" method="POST">
-                <input class="firstName" type="text" name="First Name" placeholder="First Name" required>
-                <input class="lastName" type="text" name="Last Name" placeholder="Last Name">
-                <input class="emailAddress" type="text" name="Email" placeholder="Email Address*" required>
-                <input class="phone" type="text" name="Phone" placeholder="Phone">
-                <textarea name="message" placeholder="Message" cols="30" rows="10" ></textarea>
+                <input class="firstName" name="name" type="text" placeholder="First Name" required>
+                <input class="lastName" name="surname" type="text" placeholder="Last Name">
+                <input class="emailAddress" name="email" type="text" placeholder="Email Address*" required>
+                <input class="phone" name="phone" type="text" placeholder="Phone">
+                <textarea name="Message" name="message" placeholder="Message" cols="30" rows="10"></textarea>
+
                 <input type="hidden" name="_next" value="https://geoskiing.netlify.app/formsubmit">
+                <input type="hidden" name="_captcha" value="false">
 
                 <button type="submit">Submit</button>
             </form>
